@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Query.chat should fetch specified chat 1`] = `
+Object {
+  "chat": Object {
+    "id": "1",
+    "lastMessage": Object {
+      "content": "You on your way?",
+      "createdAt": 2020-09-17T07:21:32.639Z,
+      "id": "1",
+    },
+    "name": "Ethan Gonzales",
+    "picture": "https://randomuser.me/api/portraits/thumb/men/1.jpg",
+  },
+}
+`;

@@ -1,7 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="1" failures="0" time="29.713">
-  <testsuite name="Query.chats" errors="0" failures="0" skipped="0" timestamp="2020-09-15T17:20:57" time="20.523" tests="1">
-    <testcase classname="Query.chats should fetch all chats" name="Query.chats should fetch all chats" time="0.041">
+<testsuites name="jest tests" tests="2" failures="1" time="18.52">
+  <testsuite name="Query.chat" errors="0" failures="0" skipped="0" timestamp="2020-09-18T00:01:23" time="8.869" tests="1">
+    <testcase classname="Query.chat should fetch specified chat" name="Query.chat should fetch specified chat" time="0.046">
+    </testcase>
+  </testsuite>
+  <testsuite name="Query.chats" errors="0" failures="1" skipped="0" timestamp="2020-09-18T00:01:23" time="9.238" tests="1">
+    <testcase classname="Query.chats should fetch all chats" name="Query.chats should fetch all chats" time="0.046">
+      <failure>Error: expect(received).toMatchSnapshot()
+
+Snapshot name: `Query.chats should fetch all chats 1`
+
+- Snapshot  - 4
++ Received  + 4
+
+@@ -2,41 +2,41 @@
+    &quot;chats&quot;: Array [
+      Object {
+        &quot;id&quot;: &quot;1&quot;,
+        &quot;lastMessage&quot;: Object {
+          &quot;content&quot;: &quot;You on your way?&quot;,
+-         &quot;createdAt&quot;: 2020-09-15T00:41:17.450Z,
++         &quot;createdAt&quot;: 2020-09-17T07:21:33.004Z,
+          &quot;id&quot;: &quot;1&quot;,
+        },
+        &quot;name&quot;: &quot;Ethan Gonzales&quot;,
+        &quot;picture&quot;: &quot;https://randomuser.me/api/portraits/thumb/men/1.jpg&quot;,
+      },
+      Object {
+        &quot;id&quot;: &quot;2&quot;,
+        &quot;lastMessage&quot;: Object {
+          &quot;content&quot;: &quot;Hey, it&apos;s me&quot;,
+-         &quot;createdAt&quot;: 2020-09-14T08:01:17.450Z,
++         &quot;createdAt&quot;: 2020-09-16T14:41:33.004Z,
+          &quot;id&quot;: &quot;2&quot;,
+        },
+        &quot;name&quot;: &quot;Bryan Wallace&quot;,
+        &quot;picture&quot;: &quot;https://randomuser.me/api/portraits/thumb/men/2.jpg&quot;,
+      },
+      Object {
+        &quot;id&quot;: &quot;3&quot;,
+        &quot;lastMessage&quot;: Object {
+          &quot;content&quot;: &quot;I should buy a boat&quot;,
+-         &quot;createdAt&quot;: 2020-08-30T01:21:17.450Z,
++         &quot;createdAt&quot;: 2020-09-01T08:01:33.004Z,
+          &quot;id&quot;: &quot;3&quot;,
+        },
+        &quot;name&quot;: &quot;Avery Stewart&quot;,
+        &quot;picture&quot;: &quot;https://randomuser.me/api/portraits/thumb/women/1.jpg&quot;,
+      },
+      Object {
+        &quot;id&quot;: &quot;4&quot;,
+        &quot;lastMessage&quot;: Object {
+          &quot;content&quot;: &quot;This is wicked good ice cream&quot;,
+-         &quot;createdAt&quot;: 2020-09-11T20:01:17.450Z,
++         &quot;createdAt&quot;: 2020-09-14T02:41:33.004Z,
+          &quot;id&quot;: &quot;4&quot;,
+        },
+        &quot;name&quot;: &quot;Katie Peterson&quot;,
+        &quot;picture&quot;: &quot;https://randomuser.me/api/portraits/thumb/women/2.jpg&quot;,
+      },
+    at Object.&lt;anonymous&gt; (/home/seimori/projects/whatsapp-clone/whatsapp-clone-server/tests/queries/getChats.test.ts:30:22)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)</failure>
     </testcase>
   </testsuite>
 </testsuites>
