@@ -1,4 +1,4 @@
-import React, { cloneElement } from 'react';
+import React from 'react';
 import {
   BrowserRouter,
   Route,
@@ -16,7 +16,7 @@ const App: React.FC = () => (
 
       <Route
         exact
-        path="/chats/:chatID"
+        path="/chats/:chatId"
         component={({ match }: RouteComponentProps<{ chatId: string }>) => (
           <ChatRoomScreen chatId={match.params.chatId} />
         )}

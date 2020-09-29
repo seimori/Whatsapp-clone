@@ -2,7 +2,7 @@ import React from 'react';
 import { useMemo, useState } from 'react';
 
 const getChatQuery = `
-query GetChat($ChatId: ID!) {
+query GetChat($chatId: ID!) {
 	chat(chatId: $chatId) {
 		id
 		name
@@ -13,7 +13,8 @@ query GetChat($ChatId: ID!) {
 			createdAd
 		}
 	}
-}`;
+}
+`;
 
 interface ChatRoomScreenParams {
   chatId: string;

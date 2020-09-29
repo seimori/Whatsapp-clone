@@ -13,6 +13,7 @@ const resolvers = {
     lastMessage(chat: any) {
       const lastMessage = chat.messages[chat.messages.length - 1];
       return messages.find((m) => m.id === lastMessage);
+      // return messages.find((m) => m.id === lastMessage.id);
     },
   },
 
